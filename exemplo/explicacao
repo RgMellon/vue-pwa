@@ -1,0 +1,26 @@
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js');
+}
+
+esse cara serve para verificar se existe um sw, se não existir
+ele cria um
+
+
+install: processo de instalção acontece uma unica vez
+
+
+activate: processo de ativação apenas uma vez executado
+
+
+fetch: escuta de requisicoes
+
+
+ e.waitUntil()
+ aguarde enquanto a promise se resolva
+
+
+appshell
+esqueleto da aplicação, aquela parte estatica na qual não mudaria
+com frequencia, o conteudo da app, seria o dinamico
+que muda conforme alguma coisa aconteça, tipo req api ou
+consulta firebase
